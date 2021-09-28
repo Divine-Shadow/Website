@@ -72,12 +72,13 @@
         <div class="col-md-6 col-md-offset-1 content">
             <h4 class="uppercase">Don’t hesitate to reach out!</h4>
             <p>
-                We strive to give the perfect escape room experience. Our dedicated support welcomes feedback and is ready to answer any questions and booking inquiries. Let us help you!
+                We strive to give the ultimate gaming experience.
+                Our dedicated support welcomes feedback and is ready to answer any questions and booking inquiries.
+                Let us help you!
             </p>
             <hr>
             <p>
-                We are available to talk or text during our business<br> hours, Sunday– Saturday, 11 am – 10 pm.
-                438 Marine Parade
+                We respond to emails and messages from the form below at 5pm M-F
             </p>
             <p>
                 <strong>Address: </strong> 2515 Jay Avenue #B3 Cleveland, OH 44113
@@ -93,17 +94,18 @@
         <div class="col-md-6 p0 image">
             <div class="map-holder background-image-holder">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2988.8372021393243!2d-81.70803548477856!3d41.48612899783138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830f06c26b6aaab%3A0x61b34ee6ebf124e0!2s2515%20Jay%20Ave%20%23B2%2C%20Cleveland%2C%20OH%2044113%2C%20USA!5e0!3m2!1sen!2s!4v1631218949573!5m2!1sen!2s"></iframe>
-                
-
             </div>
         </div>
         <div class="col-md-6 content">
-            <form class="form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly.">
+            <form action="/action_page.php">
                 <h6 class="uppercase text-center">Send A Message</h6>
-                <input type="text" class="validate-required" name="name" placeholder="Your Name" />
-                <input type="text" class="validate-required validate-email" name="email" placeholder="Email Address" />
-                <textarea class="validate-required" name="message" rows="4" placeholder="Message"></textarea>
-                <button type="submit" class="green">Send Message</button>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" required><br>
+                <label for="userMessage">Message</label><br>
+                <input type="text" id="userMessage" name="userMessage"><br><br>
+                <input type="submit" value="Submit">
             </form>
         </div>
     </section>

@@ -1722,6 +1722,7 @@ input[type="password"] {
   cursor: default;
 }
 input[type="text"],
+input[type="email"],
 input[type="password"] {
   background: #f5f5f5;
   border: none;
