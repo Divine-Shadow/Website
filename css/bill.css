@@ -1,0 +1,20 @@
+#tournament-listing {
+	font-size: large;
+	list-style-type: circle;
+}
+
+#blaston {
+	background-image:url("../img/blaston.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#propagation {
+	background-image:url("../img/propagation.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#superhot {
+	background-image:url("../img/superhot.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
