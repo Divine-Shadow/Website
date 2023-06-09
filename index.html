@@ -138,62 +138,9 @@
 <script src="js/parallax.js"></script>
 <script src="js/scripts.js"></script>
 <script src="css/slider/slick/slick.js"></script>
-<script>
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide",
-        rtl: true,
-        itemWidth: 400,
-        itemHeight: 400,
-        dots: false,
-    });
-  });
-
-    window.intercomSettings = {
-        app_id: "jrdbn46n"
-    };
-</script>
-<script>
-    $(document).ready(function(){
-
-        setTimeout(function () {
-            $('#slider').slick({
-                infinite: false,
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                prevArrow: '<div class="slick-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-                nextArrow: '<div class="slick-next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
-                responsive: [
-                {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2,
-                        adaptiveHeight: true,
-                    },
-                },
-                {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    },
-                },
-                ],
-
-            });
-        },100);
-
-
-    });
-    function book()
-    {
-        url = "https://customer.springboardvr.com";
-        reservationUUID = "9919c5a0-bb51-11eb-bd36-61e11d1a18cf";
-        window.open(window.location.href=url + '/reserve/' + reservationUUID + '?backToArcade=' + 'billscrib.com');
-    }
-
-</script>
-
+<script src="js/flexslider-setup.js"></script>
+<script src="js/intercom-settings.js"></script>
+<script src="js/slick-setup.js"></script>
+<script src="js/bookings.js"></script>
 </body>
 </html>
