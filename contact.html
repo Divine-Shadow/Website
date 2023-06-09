@@ -3,13 +3,7 @@
     <head>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWH073W89L"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-DWH073W89L');
-        </script>
+        <script src="js/google-analytics-setup.js"></script>
         <script defer src="js/header.js"></script>
         <script defer src="js/footer-component.js"></script>
         <meta charset="utf-8">
@@ -25,7 +19,22 @@
         <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
         <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,600,700' rel='stylesheet' type='text/css'>
-
+        <script defer src="js/jquery.min.js"></script>
+        <script defer src="js/bootstrap.min.js"></script>
+        <script defer src="js/flickr.js"></script>
+        <script defer src="js/flexslider.min.js"></script>
+        <script defer src="js/lightbox.min.js"></script>
+        <script defer src="js/masonry.min.js"></script>
+        <script defer src="js/twitterfetcher.min.js"></script>
+        <script defer src="js/spectragram.min.js"></script>
+        <script defer src="js/ytplayer.min.js"></script>
+        <script defer src="js/countdown.min.js"></script>
+        <script defer src="js/smooth-scroll.min.js"></script>
+        <script defer src="js/parallax.js"></script>
+        <script defer src="js/scripts.js"></script>
+        <script defer src="js/flexslider-setup.js"></script>
+        <script defer src="js/intercom-settings.js"></script>
+        <script defer src="js/bookings.js"></script>
     </head>
     <body class="scroll-assist">
     <header-nav></header-nav>
@@ -102,42 +111,7 @@
     </section>
 </div>
 <!--end of container-->
-<!--end of container-->
 <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
     <footer-component></footer-component>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/flickr.js"></script>
-<script src="js/flexslider.min.js"></script>
-<script src="js/lightbox.min.js"></script>
-<script src="js/masonry.min.js"></script>
-<script src="js/twitterfetcher.min.js"></script>
-<script src="js/spectragram.min.js"></script>
-<script src="js/ytplayer.min.js"></script>
-<script src="js/countdown.min.js"></script>
-<script src="js/smooth-scroll.min.js"></script>
-<script src="js/parallax.js"></script>
-<script src="js/scripts.js"></script>
-<script>
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        animation: "slide",
-        rtl: true,
-        itemWidth: 450,
-        itemHeight: 300
-    });
-  });
-
-    window.intercomSettings = {
-        app_id: "jrdbn46n"
-    };
-            function book()
-    {
-        url = "https://customer.springboardvr.com";
-        reservationUUID = "9919c5a0-bb51-11eb-bd36-61e11d1a18cf";
-        window.open(window.location.href=url + '/reserve/' + reservationUUID + '?backToArcade=' + 'billscrib.com', 'target="_blank"');
-    }
-</script>
-
 </body>
 </html>
