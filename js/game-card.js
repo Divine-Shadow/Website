@@ -4,12 +4,13 @@ class GameCard extends HTMLElement {
 
         // Access attributes
         const title = this.getAttribute('title');
-        const imageSrc = this.getAttribute('img');
+        const imagePath = '../' + this.getAttribute('imageSrc');
+
 
         this.innerHTML = `
             <div class="post-slide">
                 <div class="post-img">
-                    <img src="${imageSrc}" alt="">
+                    <img src="${imagePath}" alt="">
                     <a href="javascript:void(0)" class="over-layer"><i class="fa fa-link"></i></a>
                 </div>
                 <div class="post-content">
