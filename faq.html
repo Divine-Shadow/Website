@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="expandButton">See all games</button>
+<div id="fullList" class="expandable">
+    <ul>
+        <li>Game 1</li>
+        <li>Game 2</li>
+    </ul>
+</div>
+
+<style>
+    .expandable { display: none; }
+    .expanded { display: block; }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        console.log('script is running');
+        document.getElementById('expandButton').addEventListener('click', function() {
+            console.log('button clicked');
+            document.getElementById('fullList').classList.toggle('expanded');
+        });
+    });
+</script>
+
+</body>
+</html>
