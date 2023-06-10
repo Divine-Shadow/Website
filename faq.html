@@ -1,29 +1,147 @@
-<!DOCTYPE html>
-<html>
-<body>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Bills Crib | FAQ </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/theme-nature.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/font-oswald.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/faq-helper.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/slider/slick/slick.css">
+    <link rel="stylesheet" href="css/slider/slick/slick-theme.css">
 
-<button id="expandButton">See all games</button>
-<div id="fullList" class="expandable">
-    <ul>
-        <li>Game 1</li>
-        <li>Game 2</li>
-    </ul>
-</div>
-
-<style>
-    .expandable { display: none; }
-    .expanded { display: block; }
-</style>
-
-<script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        console.log('script is running');
-        document.getElementById('expandButton').addEventListener('click', function() {
-            console.log('button clicked');
-            document.getElementById('fullList').classList.toggle('expanded');
+    <!-- First load jquery and bootstrap for dependency management -->
+    <script async src="js/jquery.min.js"></script>
+    <script defer src="js/bootstrap.min.js"></script>
+    <!-- Then libraries -->
+    <script defer src="js/flickr.js"></script>
+    <script defer src="js/flexslider.min.js"></script>
+    <script defer src="js/lightbox.min.js"></script>
+    <script defer src="js/masonry.min.js"></script>
+    <script defer src="js/twitterfetcher.min.js"></script>
+    <script defer src="js/spectragram.min.js"></script>
+    <script defer src="js/ytplayer.min.js"></script>
+    <script defer src="js/countdown.min.js"></script>
+    <script defer src="js/smooth-scroll.min.js"></script>
+    <script defer src="js/parallax.js"></script>
+    <script defer src="css/slider/slick/slick.js"></script>
+    <!-- Custom components -->
+    <script defer src="js/header.js"></script>
+    <script defer src="js/footer-component.js"></script>
+    <script defer src="js/game-card.js"></script>
+    <script defer src="js/faq-item.js"></script>
+    <!-- Load WebFont Loader -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <!-- Load fonts async using WebFont Loader -->
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Lato:300,400', 'Raleway:100,400,300,500,600,700', 'Open+Sans:400,500,600', 'Oswald:300,400,600,700']
+            }
         });
-    });
-</script>
+    </script>
+    <style>
+        .game-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        game-card {
+            width: 30%;
+            margin-bottom: 2em;
+        }
+        @media (max-width: 600px) {
+            game-card {
+                width: 100%;
+            }
+        }
+         .expandable {
+             display: none;
+             margin-top: 2em;
+             padding: 1em;
+             border-top: 1px solid #ccc;
+         }
 
+        .expanded {
+            display: block;
+        }
+    </style>
+</head>
+<body class="scroll-assist">
+<!-- nav widget here-->
+<header-nav></header-nav>
+
+<div class="main-container">
+    <section class="dark" style="">
+        <div class="container">
+            <h1>Frequently Asked Questions</h1>
+            <p>(Click on a question for the answer)</p>
+            <ol id="faq-list">
+                <li>
+                    <faq-item question="What is a location-based virtual reality arcade?" answer="Our VR arcade is a place where you can immerse yourself in various virtual realities, using the latest, high-performance VR equipment. We handle the technicalities so you can focus on having an unforgettable time. Plus, your friends can watch your adventures on our TV screens and projectors."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="How does Virtual Reality work?" answer="VR simulates your senses in line with a virtual environment. You'll see unique video feeds in each eye and interact with elements that mimic real-world sensations. This high-tech immersive experience transforms your body's movements into game actions."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="Is there an age limit to participate?" answer="We welcome VR adventurers of all ages. But, children under 8 may find the headsets a bit big to handle."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="Do I need any previous experience with VR to play?" answer="Absolutely not! Our friendly staff will guide beginners, ensuring an easy and exciting VR introduction."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="Is it safe? Are there any health concerns or restrictions?" answer="Your safety is paramount. VR is physically safe, but caution is advised for those prone to seizures or epilepsy. If you're new to VR, you might experience slight nausea or dizziness - regular breaks can help, and these symptoms usually lessen with time."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="What kind of games/experiences do you offer?" answer="We boast a diverse library of 100+ titles, from epic RPGs, eSports, casual games to educational experiences. Whether you crave thrilling adventures or intellectual exploration, we have you covered."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="How long does a typical VR session last?" answer="A typical session lasts around 60-90 minutes. But feel free to switch games as you like!"></faq-item>
+                </li>
+                <li>
+                    <faq-item question="Do I need to book in advance or can I walk in?" answer="We're flexible. Walk-ins are welcome, and bookings can be made online or over the phone."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="What are the costs associated with playing at your VR arcade?" answer="Headset rentals are $30/hour. Short on time? Grab a 30-minute session for just $20."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="Do you offer group bookings or parties?" answer="Absolutely! For group bookings or parties, get in touch to discuss the specifics."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="Do you provide all necessary equipment?" answer="Yes, we do. Just bring along your sense of adventure!"></faq-item>
+                </li>
+                <li>
+                    <faq-item question="What measures do you take to ensure cleanliness of the VR equipment?" answer="Your safety is our priority. All equipment is frequently cleaned, and sanitary face masks are available on request."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="Is there a leaderboard or way to track progress?" answer="At present, we don't have a leaderboard, but we love feedback! If you'd like this feature, let us know."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="Can I share my VR experience on social media?" answer="Absolutely! Feel free to share your VR tales, just remember to tag us, Bill's Crib. We're also excited to host streamers!"></faq-item>
+                </li>
+                <li>
+                    <faq-item question="What makes your arcade better than my home VR setup?" answer="Our arcade provides a social space, a vast game library, on-the-spot technical support, and custom hardware adjustments. It's a great place to connect with other gamers and learn some tricks."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="Can we play together as a group?" answer="Definitely! We ensure multiplayer experiences are smooth and memorable. Gather your squad and plunge into an adventure."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="Is your arcade suitable for kids' birthday parties?" answer="Absolutely! Kids' parties are a blast here. Our diverse game selection and supportive staff ensure a fun-filled day for everyone."></faq-item>
+                </li>
+                <li>
+                    <faq-item question="What are your content restrictions? Can I choose non-violent games for my kids?" answer="All games are open to players, but we can set up custom filters based on your preferences. Notify us in advance, and we'll ensure the game selection is suitable for your kids."></faq-item>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <footer-component></footer-component>
+</div>
+<script src="js/expand-games.js"></script>
 </body>
 </html>
