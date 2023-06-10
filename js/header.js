@@ -15,7 +15,7 @@ class HeaderNav extends HTMLElement {
               <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="../index.html">Home</a></li>
-                    <!--- <li><a href="../our-games.html">Our Games</a></li> --> 
+                    <li><a href="../our-games.html">Our Games</a></li>  
                     <li><a href="../contact.html">Contact</a></li>
                     <li><a href="../about.html">About</a></li>
                     <li><a href="../faq.html">FAQ</a></li> 
