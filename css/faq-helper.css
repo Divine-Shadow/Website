@@ -1,0 +1,37 @@
+/* Style for the question text */
+.faq-item .question {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Style for the answer text */
+.faq-item .answer {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Style for the expanded answer text */
+.faq-item .answer.expanded {
+    display: block;
+}
+
+/* Style for the expandable behavior */
+.faq-item.expandable .question::after {
+    content: "+";
+    float: right;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.expandable .question.expanded::after {
+    transform: rotate(45deg);
+}
+
+.faq-item.expandable .answer {
+    transition: max-height 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+.faq-item.expandable .answer.expanded {
+    max-height: 1000px; /* Adjust this value to fit your content */
+}

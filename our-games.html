@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>VR Gaming for Friends and Family</title>
+    <title>Bills Crib | Our Games</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
@@ -77,43 +77,50 @@
 <div class="main-container">
     <section class="dark" style="">
         <div class="container">
+            <h1>Our Most Popular Titles</h1>
+            <p>Full list available at the bottom</p>
             <div class="game-grid">
-                <game-card title="Game 1" imageSrc="img/1.jpeg"></game-card>
-                <game-card title="Game 2" imageSrc="img/3.jpeg"></game-card>
-                <game-card title="Game 1" imageSrc="img/1.jpeg"></game-card>
-                <game-card title="Game 2" imageSrc="img/3.jpeg"></game-card>
-                <game-card title="Game 1" imageSrc="img/1.jpeg"></game-card>
-                <game-card title="Game 2" imageSrc="img/3.jpeg"></game-card>
+                <game-card title="Pavlov" imageSrc="img/pavlov.jpeg"></game-card>
+                <game-card title="RevolVR 3" imageSrc="img/revolver.jpeg"></game-card>
+                <game-card title="Propagation VR" imageSrc="img/propagation-coop.jpeg"></game-card>
+                <game-card title="Arizona Sunshine" imageSrc="img/arizona.jpeg"></game-card>
+                <game-card title="Elven Assassin" imageSrc="img/elven.jpeg"></game-card>
+                <game-card title="Creed: Rise To Glory" imageSrc="img/creed.png"></game-card>
                 <!-- Rest of your game cards go here -->
             </div>
-            <button id="expandButton" onclick="handleExpandButtonClick()">See all games</button>
-            <div id="fullList" class="expandable">
-                <ul>
-                    <li>Game 1</li>
-                    <li>Game 2</li>
-                    <li>Game 1</li>
-                    <li>Game 2</li>
-                    <li>Game 1</li>
-                    <li>Game 2</li>
-                    <li>Game 1</li>
-                    <li>Game 2</li>
-                    <li>Game 1</li>
-                    <li>Game 2</li>
-                    <li>Game 1</li>
-                    <li>Game 2</li>
-                    <li>Game 1</li>
-                    <li>Game 2</li>
-                    <li>Game 1</li>
-                    <li>Game 2</li>
-                    <li>Game 1</li>
-                    <li>Game 2</li>
-                    <!-- Rest of your game list goes here -->
-                </ul>
-            </div>
+            <button id="expandButton" onclick="handleExpandButtonClick()">
+                See Full Game Catalog
+            </button>
         </div>
     </section>
     <footer-component></footer-component>
 </div>
-<script src="js/expand-games.js"></script>
+<!-- Confirmation modal -->
+<div id="externalLinkConfirmation" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Leaving Our Site</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    You are about to leave our site and view the full game catalog on our provider's page. Remember, you can always return to our site for booking a session.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stay on This Page</button>
+                <a id="externalLink" href="https://licensing-company-games-url.com" target="_blank" class="btn btn-primary">Proceed to Full Game Catalog</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function handleExpandButtonClick() {
+        // Show the confirmation modal
+        var myModal = new bootstrap.Modal(document.getElementById('externalLinkConfirmation'));
+        myModal.show();
+    }
+</script>
 </body>
 </html>
