@@ -48,97 +48,81 @@
             }
         });
     </script>
+    <style>
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2em;
+        }
+        .section img {
+            width: 45%;
+            height: auto;
+        }
+        .section .text {
+            width: 50%;
+        }
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+</style>
 </head>
 <body class="scroll-assist">
 <!-- nav widget here-->
 <header-nav></header-nav>
 
 <div class="main-container">
-    <p class="announce">More Times available for large groups and special events!
-        <a href="contact.html#cForm" style="color: white;">Contact Us</a> for details
-    </p>
-    <section class="fullscreen image-bg">
-        <div class="background-image-holder">
-            <img alt="image" class="background-image" src="img/zombie-VR-scaled-e1627492190817.jpeg" />
-        </div>
-        <div class="container v-align-transform">
-            <div class="row">
-                <div class="col-sm-12">
-                    <!--end of modal video-->
-                    <div class="lead inline-bock text-center bc">
-                        <h3 class="uppercase customtext text-white">
-                            BILL’S CRIB<br>
-                            VIRTUAL REALITY GAMES
-                        </h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--end of container-->
-    </section>
     <section class="dark" style="">
 
         <div class="container">
-            <div class="row">
-                <div class="col-sm-8 text-left respo">
-                    <p class="lead mb64">
-                        Bill's Crib VR room at <a href="https://www.perplexitygames.com/">Perplexity Games</a> is a virtual reality arcade for up to four people. Choose from a huge variety of single-player and multi-player VR games, from classics like Fruit Ninja and Angry Birds to intense shooters like Pavlov. See if you've got what it takes to Walk the Plank, try your hand at shooting zombies, or just explore what VR is all about.
-                    </p>
-                    <h3>High Quality VR Experience</h3>
-                    <p>
-                        For ages 8 and up. The VR room is open for walk-in games (subject to availability) on Friday from 5-9pm and Saturday from 12-9pm. Bookings Sunday-Thursday by online/phone reservation only. To prevent conflicts, please book at least 24 hours in advance. For custom times, give us a call at 216-273-8000 x5.
-                    </p>
-                    <a class="btn btn-lg steel mb0" href="javascript:void(0)" onclick="book()">BOOK NOW</a>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <table class="proce">
-                        <thead>
-                        <tr>
-                            <th colspan="2">Price</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>
-                                <strong>$ 20</strong><br>
-                                for 30 minutes of immersion
-                            </td>
-                        </tr>
-                        <tr><td>
-                            <a href="contact.html#cForm">Contact us </a> for discounts on large/long bookings
-                        </td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!--end of row-->
-        </div>
-        <!--end of container-->
-    </section>
-
-    <section class="bg-secondary">
-
-        <div class="contaner">
-            <div class="row v-align-childn">
-                <div class="container-flud">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div id="slider" class="owl-carousel">
-                                <game-card title="Virtual Reality gaming" imageSrc="img/1.jpeg"></game-card>
-                                <game-card title="Half Life - Alyx" imageSrc="img/2.jpeg"></game-card>
-                                <game-card title="Blade & Sorcery" imageSrc="img/3.jpeg"></game-card>
-                                <game-card title="Angry Birds" imageSrc="img/4.png"></game-card>
-                                <game-card title="Walk the Plank" imageSrc="img/5.jpeg"></game-card>
-                                <game-card title="Pavlov VR" imageSrc="img/6.jpeg"></game-card>
-                                <game-card title="Fruit Ninja" imageSrc="img/7.jpeg"></game-card>
-                            </div>
+            <div id="about">
+                    <h1>About Us</h1>
+                    <div class="section">
+                        <img src="img/1.jpeg" alt="Hero image for About Us page" />
+                        <div class="text">
+                            <p>Welcome to Bill's Crib, the vanguard of entertainment at Perplexity Games, where we harness the power of Virtual Reality (VR) to transform the impossible into reality. Picture yourself stepping into an alien landscape, soaring through vast skies, or combating hordes of zombies. Thanks to our innovative VR Arcade, complemented by cutting-edge technology and unparalleled customer service, such immersive experiences become your reality.</p>
                         </div>
                     </div>
-                </div>
+
+                    <div class="section">
+                        <img src="img/2.jpeg" alt="Image representing our story" />
+                        <div class="text">
+                            <h2>Our Story</h2>
+                            <p>The genesis of our story lies with Bill, a seasoned software engineer from Cleveland with an enduring passion for STEM and video games. After securing formal education in Mathematics, Software Engineering, and Data Science, Bill embarked on an endeavor to fuse his passion and expertise into a thriving business. He carved his path by integrating VR into popular games and crafting a custom multiplayer Minecraft server enabled with VR and raytracing. These adventures served as the cornerstone for Bill's Crib, a distinctive VR destination designed to transport you to an array of virtual worlds.</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <img src="img/3.jpeg" alt="Image showcasing our VR experiences" />
+                        <div class="text">
+                            <h2>Our VR Experiences</h2>
+                            <p>Catering to both novice VR users and seasoned gamers, we ensure your experience in our arcade is comfortable, enjoyable, and fully immersive. Beyond mere touch and sight, our state-of-the-art equipment - including high-end headsets, vests, and props - promise a multisensory adventure. Here, you can move freely, feel the thud of impacts, and even experience the recoil of in-game weaponry.
+
+                                VR at Bill's Crib extends beyond the realm of traditional gaming. Whether you yearn to fly through the cosmos or outlive a zombie apocalypse, the choice is entirely yours! Moreover, those who embrace VR today are shaping its future. By stepping into our VR Arcade, you're not only partaking in a thrilling adventure but also influencing this revolutionary technology's societal role.
+
+                                Our pride at Bill's Crib lies in delivering more than just a VR experience. We offer a meticulously fine-tuned service with every technical detail seamlessly taken care of. Our staff, adept in VR technology, are on hand to assist and ensure your gaming session is smooth, uninterrupted, and truly unforgettable. With the ability to accommodate on-site multiplayer games, we're the go-to spot for you and your friends to forge shared virtual experiences.</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <img src="img/7.jpeg" alt="Image representing our mission" />
+                        <div class="text">
+                            <h2>Our Mission</h2>
+                            <p>For us, VR extends beyond mere escapism. We're captivated by its untapped potential, whether it's aiding the understanding of complex calculus or training the surgeons of tomorrow. We're committed to using this transformative technology to effect positive societal change.</p>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <img src="img/5.jpeg" alt="Image representing our mission" />
+                        <div class="text">
+                            <h2>Join the Future</h2>
+                            <p>Consider Bill's Crib your passport to the future. More than a VR arcade, we offer a journey brimming with immersive experiences, challenging adventures, and boundless possibilities. Don't just take our word for it, [insert testimonial or award]! Are you ready to take the leap into the future of entertainment? Book your VR adventure today and step into another world with us.</p>
+                        </div>
+                    </div>
+
+                <a href="javascript:void(0)" id="bookbutton" onclick="book()">Book your VR adventure today!</a>
             </div>
-            <!--end of row-->
         </div>
-        <!--end of container-->
     </section>
     <footer-component></footer-component>
 </div>
