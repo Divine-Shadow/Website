@@ -14,14 +14,11 @@
     <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="css/slider/slick/slick.css">
     <link rel="stylesheet" href="css/slider/slick/slick-theme.css">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWH073W89L"></script>
-    <script src="js/google-analytics-setup.js"></script>
-    <script defer src="js/header.js"></script>
-    <script defer src="js/footer-component.js"></script>
-    <script defer src="js/game-card.js"></script>
-    <script defer src="js/jquery.min.js"></script>
+
+    <!-- First load jquery and bootstrap for dependency management -->
+    <script async src="js/jquery.min.js"></script>
     <script defer src="js/bootstrap.min.js"></script>
+    <!-- Then libraries -->
     <script defer src="js/flickr.js"></script>
     <script defer src="js/flexslider.min.js"></script>
     <script defer src="js/lightbox.min.js"></script>
@@ -32,12 +29,11 @@
     <script defer src="js/countdown.min.js"></script>
     <script defer src="js/smooth-scroll.min.js"></script>
     <script defer src="js/parallax.js"></script>
-    <script defer src="js/scripts.js"></script>
     <script defer src="css/slider/slick/slick.js"></script>
-    <script defer src="js/flexslider-setup.js"></script>
-    <script defer src="js/intercom-settings.js"></script>
-    <script defer src="js/slick-setup.js"></script>
-    <script defer src="js/bookings.js"></script>
+    <!-- Custom components -->
+    <script defer src="js/header.js"></script>
+    <script defer src="js/footer-component.js"></script>
+    <script defer src="js/game-card.js"></script>
     <!-- Load WebFont Loader -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <!-- Load fonts async using WebFont Loader -->
@@ -90,7 +86,7 @@
                 <game-card title="Game 2" imageSrc="img/3.jpeg"></game-card>
                 <!-- Rest of your game cards go here -->
             </div>
-            <button id="expandButton">See all games</button>
+            <button id="expandButton" onclick="handleExpandButtonClick()">See all games</button>
             <div id="fullList" class="expandable">
                 <ul>
                     <li>Game 1</li>
@@ -114,10 +110,10 @@
                     <!-- Rest of your game list goes here -->
                 </ul>
             </div>
-            <script src="js/expand-games.js"></script>
         </div>
     </section>
     <footer-component></footer-component>
 </div>
+<script src="js/expand-games.js"></script>
 </body>
 </html>
