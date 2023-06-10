@@ -1,11 +1,12 @@
 class GameCard extends HTMLElement {
     constructor() {
         super();
+    }
 
+    connectedCallback() {
         // Access attributes
         const title = this.getAttribute('title');
-        const imagePath = '../' + this.getAttribute('imageSrc');
-
+        const imagePath = this.hasAttribute('imageSrc') ? '../' + this.getAttribute('imageSrc') : 'default/path/to/image.jpg';
 
         this.innerHTML = `
             <div class="post-slide">
