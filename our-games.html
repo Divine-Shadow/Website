@@ -16,24 +16,9 @@
     <link rel="stylesheet" href="css/slider/slick/slick-theme.css">
 
     <!-- First load jquery and bootstrap for dependency management -->
-    <script async src="js/jquery.min.js"></script>
-    <script defer src="js/bootstrap.min.js"></script>
-    <!-- Then libraries -->
-    <script defer src="js/flickr.js"></script>
-    <script defer src="js/flexslider.min.js"></script>
-    <script defer src="js/lightbox.min.js"></script>
-    <script defer src="js/masonry.min.js"></script>
-    <script defer src="js/twitterfetcher.min.js"></script>
-    <script defer src="js/spectragram.min.js"></script>
-    <script defer src="js/ytplayer.min.js"></script>
-    <script defer src="js/countdown.min.js"></script>
-    <script defer src="js/smooth-scroll.min.js"></script>
-    <script defer src="js/parallax.js"></script>
-    <script defer src="css/slider/slick/slick.js"></script>
-    <!-- Custom components -->
-    <script defer src="js/header.js"></script>
-    <script defer src="js/footer-component.js"></script>
-    <script defer src="js/game-card.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <!-- Load WebFont Loader -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <!-- Load fonts async using WebFont Loader -->
@@ -88,9 +73,7 @@
                 <game-card title="Creed: Rise To Glory" imageSrc="img/creed.png"></game-card>
                 <!-- Rest of your game cards go here -->
             </div>
-            <button id="expandButton" onclick="handleExpandButtonClick()">
-                See Full Game Catalog
-            </button>
+            <button id="expandButton" onclick="handleExpandButtonClick()">See Full Game Catalog</button>
         </div>
     </section>
     <footer-component></footer-component>
@@ -115,12 +98,41 @@
         </div>
     </div>
 </div>
+<!-- Then libraries -->
+<script  src="js/flickr.js"></script>
+<script  src="js/flexslider.min.js"></script>
+<script  src="js/lightbox.min.js"></script>
+<script  src="js/masonry.min.js"></script>
+<script  src="js/twitterfetcher.min.js"></script>
+<script  src="js/spectragram.min.js"></script>
+<script  src="js/ytplayer.min.js"></script>
+<script  src="js/countdown.min.js"></script>
+<script  src="js/smooth-scroll.min.js"></script>
+<script  src="js/parallax.js"></script>
+<script  src="css/slider/slick/slick.js"></script>
 <script>
-    function handleExpandButtonClick() {
-        // Show the confirmation modal
-        var myModal = new bootstrap.Modal(document.getElementById('externalLinkConfirmation'));
-        myModal.show();
+        document.addEventListener('DOMContentLoaded', function(event) {
+        var bootstrapScript = document.createElement('script');
+        bootstrapScript.src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js";
+        document.body.appendChild(bootstrapScript);
+
+        bootstrapScript.onload = function () {
+            let externalLinkModal = new bootstrap.Modal(document.getElementById('externalLinkConfirmation'), {
+                backdrop: 'static'
+            });
+
+            window.handleExpandButtonClick = function(event) {
+                event.preventDefault();
+                externalLinkModal.show();
+            };
     }
+    });
+
 </script>
+<!-- Custom components -->
+<script src="js/header.js"></script>
+<script src="js/footer-component.js"></script>
+<script src="js/game-card.js"></script>
+
 </body>
 </html>
