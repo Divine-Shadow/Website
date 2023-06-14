@@ -4,7 +4,7 @@ class GameCard extends HTMLElement {
 
         // Access attributes
         const title = this.getAttribute('title');
-        const imagePath = '../' + this.getAttribute('imageSrc');
+        const imagePath = '/img' + this.getAttribute('imageSrc');
 
 
         this.innerHTML = `
