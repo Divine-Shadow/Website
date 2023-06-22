@@ -27,7 +27,10 @@ class FooterComponent extends HTMLElement {
                                Saturday walk-ins <span class="date">12PM – 9PM</span>
                         </li> 
                         <li>
-                     Sunday-Thursday 12PM - 9PM avalible by online appointment only. <a href="contact.html#cForm"> Contact Us </a> for details
+                     Sunday-Thursday 12PM - 9PM avalible by online appointment only.
+						</li>
+						<li>
+						<a href="javascript:void(0)" id="bookbutton" onclick="book()">BOOK NOW</a> or <a href="contact.html#cForm"> CONTACT US. </a>
                         </li>
                         </ul>
                 </div>

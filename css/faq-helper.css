@@ -1,13 +1,21 @@
 /* Style for the question text */
 .faq-item .question {
     font-weight: bold;
+	font-size:1.25vw;
     cursor: pointer;
+	padding:5px 5px;
 }
-
+.faq-item .question:hover {
+	color: green;
+}
+.faq-item .question:active {
+	color: green;
+}
 /* Style for the answer text */
 .faq-item .answer {
     display: none;
-    margin-top: 10px;
+	font-size:1vw;
+	padding:5px 5px;
 }
 
 /* Style for the expanded answer text */
