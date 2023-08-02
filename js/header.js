@@ -18,7 +18,7 @@ class HeaderNav extends HTMLElement {
                     <!--- <li><a href="../our-games.html">Our Games</a></li> --> 
                     <li><a href="../about.html">About</a></li>
                     <li><a href="../faq.html">FAQ</a></li>        
-                    <li><a href="javascript:void(0)" id="bookbutton" onclick="book()">Booking</a></li>
+                    <li><a href="https://customer.springboardvr.com/reserve/9919c5a0-bb51-11eb-bd36-61e11d1a18cf?backToArcade=billscrib.com" id="bookbutton" onclick="book()">Booking</a></li>
                     <li><a href="../contact.html">Contact</a></li>  
                 </ul>
               </div><!--/.nav-collapse -->
