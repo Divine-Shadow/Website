@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>VR Gaming for Friends and Family</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
     <link href="css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
@@ -48,23 +48,109 @@
             }
         });
     </script>
-    <style>
+   <style>
+    .section {
+        margin-bottom: 2em;
+    }
+
+    .section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .section .text {
+        padding: 0 15px;
+    }
+
+    @media (min-width: 768px) {
         .section {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin-bottom: 2em;
-        }
-        .section img {
-            width: 45%;
-            height: auto;
-        }
-        .section .text {
-            width: 50%;
         }
         .section:nth-child(even) {
             flex-direction: row-reverse;
         }
+        .section img {
+            width: 45%;
+        }
+        .section .text {
+            width: 50%;
+        }
+    }
+</style>
+Step 2: Improve the overall styling
+Now, let's add some additional styles to improve the overall appearance of the "About Us" page:
+
+html
+Copy code
+<style>
+    .section {
+        margin-bottom: 2em;
+    }
+
+    .section img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .section .text {
+        padding: 0 15px;
+    }
+
+    @media (min-width: 768px) {
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .section:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .section img {
+            width: 45%;
+        }
+        .section .text {
+            width: 50%;
+        }
+    }
+	h1 {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        line-height: 1.8;
+        font-size: 16px;
+    }
+
+    .btn {
+        display: block;
+        max-width: 200px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 12px 24px;
+        border-radius: 5px;
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+        background-color: #3498db;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #2980b9;
+    }
 </style>
 </head>
 <body class="scroll-assist">
