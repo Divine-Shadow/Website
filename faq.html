@@ -46,30 +46,21 @@
             }
         });
     </script>
-    <style>
-        .game-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        game-card {
-            width: 30%;
-            margin-bottom: 2em;
-        }
-        @media (max-width: 600px) {
-            game-card {
-                width: 100%;
-            }
-        }
-         .expandable {
-             display: none;
-             margin-top: 2em;
-             padding: 1em;
-             border-top: 1px solid #ccc;
-         }
+	 <style>
+        /* ... (existing styles remain the same) ... */
 
-        .expanded {
-            display: block;
+        /* Increase font size and adjust margins for mobile */
+        @media (max-width: 600px) {
+            .faq-item {
+                margin-bottom: 1em;
+            }
+            .faq-item__question {
+                font-size: 18px;
+            }
+            .faq-item__answer {
+                font-size: 16px;
+                margin-top: 0.5em;
+            }
         }
     </style>
 </head>
