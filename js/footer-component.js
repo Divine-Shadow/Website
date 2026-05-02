@@ -21,14 +21,11 @@ class FooterComponent extends HTMLElement {
                        <hr>
                        <ul class="link-list recent-posts">
                         <li>
-                               Friday walk-ins <span class="date">5PM – 9PM</span>
+                               Saturday walk-ins <span class="date">1:00 pm – 9:00 pm</span>
                         </li>
                         <li>
-                               Saturday walk-ins <span class="date">12PM – 9PM</span>
+                               Sunday walk-ins <span class="date">2:00 pm – 9:00 pm</span>
                         </li> 
-                        <li>
-                     Sunday-Thursday 12PM - 9PM avalible by online appointment only.
-						</li>
 						<li>
 						<a href="javascript:void(0)" id="bookbutton" onclick="book()">BOOK NOW</a> or <a href="contact.html#cForm"> CONTACT US. </a>
                         </li>
